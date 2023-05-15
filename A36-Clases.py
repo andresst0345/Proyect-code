@@ -2,11 +2,14 @@
 
 class Marcador():
     
-    def init(self,color:str) -> None:
+    def __init__(self,color:str) -> None:
         self.color = color 
         
     def request_color(self):
         return self.color
+    
+    def __str__(self) -> str:
+        pass
         
 marcador_1 = Marcador("rojo")
 marcador_2 = Marcador()
